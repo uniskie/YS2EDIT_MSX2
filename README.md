@@ -100,19 +100,19 @@ RETURNを押すと通常入力モードに戻ります。
 ---
 ## ■ ツール紹介
 
-- ys2_extract.exe
-同梱のツール。srcフォルダにソース有。
+- ys2_extract.exe  
+同梱のツール。srcフォルダにソース有。  
 イース2のディスクをドロップすると、中のファイルを取り出します。
 実験用。
 
-- DiskExplorer
-    https://hp.vector.co.jp/authors/VA013937/editdisk/index.html
-    dskイメージを開き、ファイルを出し入れするツール
+- DiskExplorer  
+    https://hp.vector.co.jp/authors/VA013937/editdisk/index.html  
+    dskイメージを開き、ファイルを出し入れするツール  
 
-- MSXVIEWer
-    https://www.minagi.jp/2004/05/20/msxviewer/
-    BASやSC5ファイルを表示するツール
-    BASファイルをTXT形式に変換保存もできます。
+- MSXVIEWer  
+    https://www.minagi.jp/2004/05/20/msxviewer/  
+    BASやSC5ファイルを表示するツール  
+    BASファイルをTXT形式に変換保存もできます。  
 
     *(※半角ひらがなやグラフィック文字は全角に変換されます。)*
 
@@ -123,39 +123,39 @@ RETURNを押すと通常入力モードに戻ります。
 ---
 ## ■ DSKイメージ内のファイル解説
 
-- MSX2ASM
-    ...MSX2 Simple ASM
-    （バックアップ活用テクニック PART16掲載。POCO氏制作「アセンブルシステム」）
+- MSX2ASM  
+    ...MSX2 Simple ASM  
+    （バックアップ活用テクニック PART16掲載。POCO氏制作「アセンブルシステム」）  
 
-- YS2MEDIT
-    ...エディタの起動プログラム。RUN"YS2MEDIT"で実行。
+- YS2MEDIT  
+    ...エディタの起動プログラム。RUN"YS2MEDIT"で実行。  
 
-- YS2MMAIN.BAS
-    ...エディタ本体。YS2MEDITから起動される。
+- YS2MMAIN.BAS  
+    ...エディタ本体。YS2MEDITから起動される。  
 
-- YS2MEDIT.BIN
-    ...エディタ機械語部＋エディタ補助データ。
+- YS2MEDIT.BIN  
+    ...エディタ機械語部＋エディタ補助データ。  
 
-    YS2MEDITで読み込まれる。
-    tniAsmでYS2MEDIT.ASMをアセンブルした物。
+    YS2MEDITで読み込まれる。  
+    tniAsmでYS2MEDIT.ASMをアセンブルした物。  
 
-- YS2MEDIT.BOF
-    ...YS2MEDIT.BINと同等の物。
+- YS2MEDIT.BOF  
+    ...YS2MEDIT.BINと同等の物。  
 
-    MSX2ASMでYS2MEDIT.ASFをアセンブルした物。
-    現在は不要。
+    MSX2ASMでYS2MEDIT.ASFをアセンブルした物。  
+    現在は不要。  
 
-    MSX本体でアセンブルしたい場合はこちらを使用する形になる。
+    MSX本体でアセンブルしたい場合はこちらを使用する形になる。  
+    
+    こちらを使用したい場合は、  
+    YS2MEDITのBLOAD"YS2MEDIT.BIN",RをBLOAD"YS2MEDIT.BOF",Rに変更するか、  
+    YS2MEDIT.BOFをYS2MEDIT.BINにリネームする。  
 
-    こちらを使用したい場合は、
-    YS2MEDITのBLOAD"YS2MEDIT.BIN",RをBLOAD"YS2MEDIT.BOF",Rに変更するか、
-    YS2MEDIT.BOFをYS2MEDIT.BINにリネームする。
+- YS2MEDIT.ASF  
+    ...機械語部分の機械語ソースファイル。  
 
-- YS2MEDIT.ASF
-    ...機械語部分の機械語ソースファイル。
-
-    MSX2ASMでアセンブルする場合はこちらを使用する。
-    （tniASMでアセンブルする場合は不要）
+    MSX2ASMでアセンブルする場合はこちらを使用する。  
+    （tniASMでアセンブルする場合は不要）  
 
     アセンブル方法：
     - RUN"MSX2ASM"→自動で再起動→_ASM("YS2MEDIT")でアセンブル
@@ -166,17 +166,17 @@ RETURNを押すと通常入力モードに戻ります。
     - ビルドに成功するとセーブするか聞かれるので、
     セーブするならY。セーブしないならそれ以外を入力
 
-    アセンブルされたバイナリファイルは"YS2MEDIT.BOF"として保存される
+    アセンブルされたバイナリファイルは"YS2MEDIT.BOF"として保存される  
 
 ---
 ## ■ その他ファイル解説
 
-- SRC\YSEMEDIT.ASM
-    ...YS2MEDIT.BINのソースファイル
+- SRC\YSEMEDIT.ASM  
+    ...YS2MEDIT.BINのソースファイル  
 
-    tniASMでアセンブルできます。
-    アセンブルしたらYS2MEDIT.BINが出来るので
-    DSKイメージ（または実FDD）の中にコピーしてください。
+    tniASMでアセンブルできます。  
+    アセンブルしたらYS2MEDIT.BINが出来るので  
+    DSKイメージ（または実FDD）の中にコピーしてください。  
 
 ---
 ## ■ 変更履歴
