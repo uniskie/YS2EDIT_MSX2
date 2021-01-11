@@ -144,7 +144,9 @@ RETURNを押すと通常入力モードに戻ります。
 
     MSX2ASMでYS2MEDIT.ASFをアセンブルした物。
     現在は不要。
+
     MSX本体でアセンブルしたい場合はこちらを使用する形になる。
+
     こちらを使用したい場合は、
     YS2MEDITのBLOAD"YS2MEDIT.BIN",RをBLOAD"YS2MEDIT.BOF",Rに変更するか、
     YS2MEDIT.BOFをYS2MEDIT.BINにリネームする。
